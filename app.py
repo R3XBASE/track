@@ -42,5 +42,14 @@ def submit():
 def success():
     return render_template('success.html')
 
+@app.route('/score')
+def score():
+    conn = connect_db()
+    cur = conn.cursor()
+    cur.execute("SELECT COUNT(*) FROM korban")
+    total = cur.fetchone()
+    conn.close()
+    return f"Total Partisipan: {total}"
+
 if __name__ == '__main__':
     app.run(host='0.0.0.0', port=5000)
