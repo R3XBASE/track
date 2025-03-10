@@ -6,10 +6,10 @@ app = Flask(__name__)
 app.secret_key = "your_secret_key"
 
 # Konfigurasi PostgreSQL
-DB_HOST = "your_host"
-DB_NAME = "your_database"
-DB_USER = "your_username"
-DB_PASS = "your_password"
+DB_HOST = "ep-tight-hill-a1kb71s9-pooler.ap-southeast-1.aws.neon.tech"
+DB_NAME = "trackerdb"
+DB_USER = "trackerdb_owner"
+DB_PASS = "npg_90LPFozJAiNm"
 
 def connect_db():
     return psycopg2.connect(
