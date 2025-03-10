@@ -3,7 +3,7 @@ import psycopg2
 import requests
 
 app = Flask(__name__)
-app.secret_key = "your_secret_key"
+app.secret_key = "tracker123"
 
 # Konfigurasi PostgreSQL
 DB_HOST = "ep-tight-hill-a1kb71s9-pooler.ap-southeast-1.aws.neon.tech"
